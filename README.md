@@ -1,78 +1,95 @@
-📌 Loan Prediction using ANN
+# 🏦 Loan Prediction using ANN
 
-This project aims to predict loan approval status using an Artificial Neural Network (ANN) based on applicant demographic and financial information. The model is trained on a structured dataset containing real-world loan application features.
+## 📋 Introduction
 
-📊 Dataset Description
+This project focuses on predicting loan approval status using an Artificial Neural Network (ANN). It helps automate the decision-making process in banking systems by analyzing applicant data such as income, credit history, and personal details.
 
-The dataset (loanPrediction.csv) consists of 13 features related to loan applicants:
+The model improves efficiency, reduces manual effort, and provides accurate predictions for loan approval.
 
-Loan_ID – Unique identifier for each applicant
-Gender – Male/Female
-Married – Marital status
-Dependents – Number of dependents
-Education – Graduate / Not Graduate
-Self_Employed – Employment status
-ApplicantIncome – Income of the applicant
-CoapplicantIncome – Income of co-applicant
-LoanAmount – Requested loan amount
-Loan_Amount_Term – Loan repayment term
-Credit_History – Credit history (0 or 1)
-Property_Area – Urban / Rural / Semiurban
-Loan_Status – Target variable (Y = Approved, N = Not Approved)
+## 📊 Dataset Description
 
+The dataset (loanPrediction.csv) contains applicant details:
 
-🎯 Project Objective
+- Loan_ID: Unique loan identifier  
+- Gender: Male/Female  
+- Married: Marital status  
+- Dependents: Number of dependents  
+- Education: Graduate / Not Graduate  
+- Self_Employed: Yes / No  
+- ApplicantIncome: Applicant income  
+- CoapplicantIncome: Co-applicant income  
+- LoanAmount: Loan amount  
+- Loan_Amount_Term: Loan duration  
+- Credit_History: 0 or 1  
+- Property_Area: Urban / Rural / Semiurban  
+- Loan_Status: Target variable (Y/N)  
 
-The goal is to build a classification model that can:
+### Data Processing
 
-Predict whether a loan will be approved (Loan_Status)
-Identify key factors influencing loan approval
-Assist financial institutions in decision-making
+- Missing values handled  
+- Categorical encoding applied  
+- Feature scaling done  
+- Target variable converted to binary
 
-⚙️ Workflow
+## 🎯 Project Objective
 
-Data Preprocessing
-Handling missing values
-Encoding categorical variables
-Feature scaling
-Exploratory Data Analysis (EDA)
-Understanding distributions
-Identifying correlations
-Model Building
-Artificial Neural Network (ANN)
-Input layer → Hidden layers → Output layer
-Training
-Loss Function: Binary Crossentropy
-Optimizer: Adam
-Evaluation
-Accuracy
-Confusion Matrix
-Precision & Recall
+- Predict loan approval using ANN  
+- Automate loan decision process  
+- Improve accuracy of predictions  
+- Identify key factors affecting approval
 
-🧠 Model Details
-Type: Binary Classification
-Algorithm: Artificial Neural Network (ANN)
-Activation Functions: ReLU (hidden layers), Sigmoid (output layer)
+## ⚙️ Workflow
 
-📈 Results
+1. Data Collection  
+2. Data Preprocessing  
+3. Exploratory Data Analysis  
+4. Model Building (ANN)  
+5. Model Training  
+6. Model Evaluation  
+7. Prediction
 
-The ANN model successfully learns patterns from applicant data and provides reliable predictions for loan approval, with strong performance based on evaluation metrics.
+## 🧠 Model Details
 
-🛠️ Installation & Usage
-# Clone the repository
-git clone https://github.com/your-username/loan-prediction-ann.git
+- Model Type: Binary Classification  
+- Algorithm: Artificial Neural Network  
 
-# Move into project directory
-cd loan-prediction-ann
+### Architecture
+- Input Layer  
+- Hidden Layers (ReLU activation)  
+- Output Layer (Sigmoid activation)  
 
-# Install dependencies
+### Configuration
+- Loss: Binary Crossentropy  
+- Optimizer: Adam  
+- Metrics: Accuracy
+
+## 📈 Result
+
+The model performs well in predicting loan approval:
+
+- Good accuracy achieved  
+- Identifies applicant risk effectively  
+- Useful for real-world financial systems
+
+## 📦 Installation & Usage
+
+```bash
+git clone https://github.com/RiyaBisht716/Loan-Prediction.git
+cd Loan-Prediction
 pip install -r requirements.txt
-
-# Run the model
 python main.py
 
-📌 Future Improvements
-1.Hyperparameter tuning
-2.Feature engineering
-3.Try other models (Random Forest, XGBoost)
-4.Deploy as a web app
+
+
+---
+
+### 🔹 Replace Future Section
+
+```md
+## 🚀 Future Improvements
+
+- Hyperparameter tuning  
+- Feature engineering  
+- Try advanced models  
+- Build web app (Streamlit/Flask)  
+- Deploy on cloud  
